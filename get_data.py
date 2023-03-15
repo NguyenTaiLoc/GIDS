@@ -12,12 +12,14 @@ from IPython.display import display
     #         fp.write(st1[10])
     #         fp.write(',')
 
+file = open('/home/tailoc/Downloads/GIDS_dataset/data/normal_data_1.txt','w')
+
+#open and read data from file txt
 fp = open('/home/tailoc/Downloads/GIDS_dataset/data/normal_data.txt', 'r')
-   
 content = fp.readlines()
 content = content[0].split(",")
-for i in range(len(content)):
-    if content[i][0] != '0':
-        print("FALSE")
-    else:
-        print("YES")
+# print(content, end="")
+# for i in range(len(content)):
+#     content[i] = content[i][1:]
+
+
